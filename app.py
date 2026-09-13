@@ -68,7 +68,7 @@ def analyze_password():
     except Exception as e:
         return jsonify({'error': str(e)}), 500
         # Get comprehensive analysis
-        
+
         result = analyzer.analyze_password(password)
 
         # Add additional security checks
@@ -159,4 +159,6 @@ def check_breach_status(password):
 
 
 if __name__ == '__main__':
-    app.run(debug=True, host='0.0.0.0', port=5000)
+    port = int(os.environ.get('PORT', 5000))
+    debug = os.environ.get('FLASK_ENV') != 'production'
+    app.run(debug=debug, host='0.0.0.0', port=port)

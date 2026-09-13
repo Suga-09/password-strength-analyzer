@@ -4,6 +4,7 @@ from flask_cors import CORS
 from models.password_analyzer import PasswordAnalyzer
 from models.ml_trainer import MLTrainer
 from utils.validators import validate_password_input
+import os
 import hashlib
 import secrets
 import re

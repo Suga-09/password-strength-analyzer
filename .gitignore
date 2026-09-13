@@ -12,7 +12,7 @@ __pycache__/
 .pytest_cache/
 
 # Trained model (regenerate with: python models/ml_trainer.py)
-#models/password_model.pkl
+# #models/password_model.pkl
 
 # IDE settings
 .vscode/

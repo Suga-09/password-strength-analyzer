@@ -174,5 +174,5 @@ P. G. College of Engineering and Technology, Nandurbar
 Dr. Babasaheb Ambedkar Technological University, Lonere, Raigad, Maharashtra
 
 Email - aayushipadvi9@gmail.com
-Linkedln -  https://in.linkedin.com/in/aayushi-padvi-a1976429a
+Linkedln -  www.linkedin.com/in/aayushi-padvi-a407b6296
 

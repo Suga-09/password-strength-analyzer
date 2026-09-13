@@ -8,6 +8,11 @@ A hybrid **rule-based + machine learning** system for real-time password strengt
 ![License](https://img.shields.io/badge/License-MIT-yellow)
 
 ---
+## 🌐 Live Demo
+
+**[Try it live →](https://password-strength-analyzer-XXXX.onrender.com)**
+
+*(Note: The app may take 30 seconds to wake up on the free tier.)*
 
 ## ✨ Features
 

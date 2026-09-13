@@ -1,0 +1,33 @@
+password-analyzer/
+├── app.py
+├── requirements.txt
+├── models/
+│   └── password_analyzer.py
+├── static/
+│   ├── css/
+│   │   └── style.css
+│   └── js/
+│       └── script.js
+├── templates/
+│   └── index.html
+├── utils/
+│   └── validators.py
+└── data/
+    └── common_passwords.txt
+    
+    1. Generate synthetic training data (3000 passwords)
+   ├─ 1000 weak   (common patterns)
+   ├─ 1000 medium (mixed complexity)
+   └─ 1000 strong (high entropy)
+
+2. Extract features from each password
+   └─ length, lowercase, uppercase, digits, special, entropy
+
+3. Train RandomForestClassifier
+   └─ Save model as password_model.pkl
+
+4. Load model in Flask app
+   └─ Predict strength for every user password
+
+5. Combine ML prediction + rule-based analysis
+   └─ Hybrid system (more accurate than either alone)

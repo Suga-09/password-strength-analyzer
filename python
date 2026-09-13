@@ -1,0 +1,15 @@
+# Add Have I Been Pwned API check
+import hashlib 
+import secrets
+import re
+from datetime import datetime 
+
+import requests
+
+def check_pwned(password):
+    sha1 = hashlib.sha1(password.encode()).hexdigest().upper()
+    prefix = sha1[:5]
+    response = requests.get(f'https://api.pwnedpasswords.com/range/{prefix}')
+    return sha1[5:] in response.text
+
+

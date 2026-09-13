@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Strength Analyzer</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🔐 Password Strength Analyzer</h1>
+            <p class="subtitle">Check the security of your passwords in real-time</p>
+        </div>
+
+        <div class="main-section">
+            <div class="input-wrapper">
+                <div class="password-input-container">
+                    <input type="password" id="passwordInput" placeholder="Enter your password..." autocomplete="off">
+                    <button id="toggleVisibility" class="toggle-btn" aria-label="Toggle password visibility">👁️</button>
+                </div>
+
+                <div class="strength-meter">
+                    <div class="strength-meter-bg">
+                        <div id="strengthBar" class="strength-meter-fill" style="width: 0%"></div>
+                    </div>
+                    <div class="strength-info">
+                        <span id="strengthLabel" class="strength-label">Weak</span>
+                        <span id="strengthScore" class="strength-score">0/100</span>
+                    </div>
+                </div>
+
+                <div class="generator-section">
+                    <button id="generatePassword" class="btn btn-primary">Generate Strong Password</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="results" class="results-section hidden">
+            <div class="analysis-grid">
+                <div class="analysis-card">
+                    <h3>📊 Password Metrics</h3>
+                    <div id="metricsContainer" class="metrics-grid"></div>
+                </div>
+                <div class="analysis-card">
+                    <h3>💡 Security Feedback</h3>
+                    <ul id="feedbackList" class="feedback-list"></ul>
+                </div>
+            </div>
+
+            <div class="analysis-card">
+                <h3>🔬 Advanced Analysis</h3>
+                <div id="advancedMetrics" class="advanced-metrics"></div>
+            </div>
+
+            <div class="analysis-card">
+                <h3>🔑 Secure Hash (SHA-256)</h3>
+                <div id="hashContainer" class="hash-container">
+                    <p class="hash-info">This demonstrates how passwords are stored securely</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>🔒 Your passwords are never stored or transmitted</p>
+            <p class="privacy-note">All analysis is performed locally in your browser</p>
+        </div>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
